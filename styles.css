@@ -1,0 +1,32 @@
+:root { --ink:#0a0e1a; --panel:#11182b; --line:#2a3458; --text:#e8e0d0; --muted:#bfb49d; --gold:#d4b85e; --gold-deep:#c9a84c; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--ink); color:var(--text); font:16px/1.6 Inter,system-ui,sans-serif; }
+a { color:var(--gold); }
+.wrap { width:min(1120px,calc(100% - 40px)); margin:auto; }
+header { border-bottom:1px solid rgba(42,52,88,.65); }
+nav { display:flex; align-items:center; justify-content:space-between; padding:18px 0; }
+.brand { color:var(--text); font:700 20px Georgia,serif; text-decoration:none; }
+nav a:not(.brand) { color:var(--muted); text-decoration:none; margin-left:24px; font-size:14px; }
+nav a:hover { color:var(--gold); }
+.hero { padding:92px 0 82px; background:radial-gradient(ellipse at top,#1e2642 0%,var(--ink) 68%); }
+.eyebrow { color:var(--gold); font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; }
+h1,h2,h3 { font-family:Georgia,serif; line-height:1.12; }
+h1 { max-width:800px; font-size:clamp(44px,7vw,78px); margin:18px 0 24px; }
+h2 { font-size:34px; margin:0 0 16px; }
+.lead { max-width:700px; color:#d5cbb7; font-size:21px; }
+.actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
+.button { display:inline-block; padding:12px 18px; border-radius:8px; background:var(--gold-deep); color:var(--ink); font-weight:700; text-decoration:none; }
+.button.alt { background:transparent; color:var(--text); border:1px solid var(--line); }
+section { padding:72px 0; border-bottom:1px solid rgba(42,52,88,.55); }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.card { padding:24px; border:1px solid var(--line); border-radius:12px; background:rgba(17,24,43,.75); }
+.card h3 { font-size:23px; margin:8px 0; }
+.card p,.muted { color:var(--muted); }
+.tracks { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+.track { padding:30px; border:1px solid var(--line); border-radius:12px; background:var(--panel); }
+.track h3 { font-size:28px; margin:8px 0; }
+.track p { color:var(--muted); }
+.small { font-size:13px; color:#9e9279; }
+footer { padding:34px 0; color:#9e9279; font-size:13px; }
+@media(max-width:700px) { .grid,.tracks { grid-template-columns:1fr; } nav a:not(.brand) { margin-left:10px; } .hero { padding:64px 0; } }
