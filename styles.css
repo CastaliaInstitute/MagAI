@@ -9,7 +9,7 @@ nav { display:flex; align-items:center; justify-content:space-between; padding:1
 .brand { color:var(--text); font:700 20px Georgia,serif; text-decoration:none; }
 nav a:not(.brand) { color:var(--muted); text-decoration:none; margin-left:24px; font-size:14px; }
 nav a:hover { color:var(--gold); }
-.hero { padding:92px 0 82px; background:radial-gradient(ellipse at top,#1e2642 0%,var(--ink) 68%); }
+.hero { padding:92px 0 82px; background:linear-gradient(90deg,rgba(10,14,26,.98) 0%,rgba(10,14,26,.92) 38%,rgba(10,14,26,.30) 100%),url('assets/magai-study.png') center/cover; }
 .eyebrow { color:var(--gold); font-size:12px; letter-spacing:.16em; text-transform:uppercase; font-weight:700; }
 h1,h2,h3 { font-family:Georgia,serif; line-height:1.12; }
 h1 { max-width:800px; font-size:clamp(44px,7vw,78px); margin:18px 0 24px; }
@@ -28,5 +28,6 @@ section { padding:72px 0; border-bottom:1px solid rgba(42,52,88,.55); }
 .track h3 { font-size:28px; margin:8px 0; }
 .track p { color:var(--muted); }
 .small { font-size:13px; color:#9e9279; }
+.art-credit { color:#9e9279; font-size:11px; letter-spacing:.04em; margin:22px 0 0; }
 footer { padding:34px 0; color:#9e9279; font-size:13px; }
 @media(max-width:700px) { .grid,.tracks { grid-template-columns:1fr; } nav a:not(.brand) { margin-left:10px; } .hero { padding:64px 0; } }
